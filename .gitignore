@@ -1,0 +1,3 @@
+packer_cache/
+output-virtualbox/
+packer_virtualbox_virtualbox.box
