@@ -10,6 +10,14 @@ sed -i.bak -e 's/#\(en_US.UTF-8.*\)/\1/' /etc/locale.gen
 rm /etc/locale.gen.bak
 locale-gen
 
+# yaourt
+cat >> /etc/pacman.conf <<EOF
+[archlinuxfr]
+SigLevel = Never
+Server = http://repo.archlinux.fr/\$arch
+EOF
+pacman -Sy --noconfirm yaourt
+
 # For vagrant
 echo -e 'vagrant\nvagrant\n' | passwd
 useradd -m vagrant
