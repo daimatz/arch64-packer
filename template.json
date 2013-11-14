@@ -16,8 +16,8 @@
         "sh setup.sh http://{{ .HTTPIP }}:{{ .HTTPPort }}<enter>"
       ],
       "vboxmanage": [
-        ["modifyvm", "{{.Name}}", "--memory", "512"],
-        ["modifyvm", "{{.Name}}", "--cpus", "1"]
+        ["modifyvm", "{{.Name}}", "--memory", "1024"],
+        ["modifyvm", "{{.Name}}", "--cpus", "2"]
       ],
       "shutdown_command": "sudo shutdown -h now"
     }
@@ -25,7 +25,7 @@
   "provisioners": [
     {
       "type": "shell",
-      "scripts": ["scripts/vagrant.sh", "scripts/chef.sh"]
+      "scripts": ["scripts/vagrant.sh"]
     }
   ],
   "post-processors": ["vagrant"]
