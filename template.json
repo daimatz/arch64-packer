@@ -1,10 +1,10 @@
 {
   "builders": [
     {
-      "type": "virtualbox",
+      "type": "virtualbox-iso",
       "guest_os_type": "ArchLinux_64",
-      "iso_url": "http://ftp.jaist.ac.jp/pub/Linux/ArchLinux/iso/2013.11.01/archlinux-2013.11.01-dual.iso",
-      "iso_checksum": "4fd51d23d09009da3eb34c92d40a56a1c047515e",
+      "iso_url": "http://ftp.jaist.ac.jp/pub/Linux/ArchLinux/iso/2014.01.05/archlinux-2014.01.05-dual.iso",
+      "iso_checksum": "4d43709987c3cf19059195f9450465de3b87a5cb",
       "iso_checksum_type": "sha1",
       "disk_size": 8000,
       "ssh_username": "vagrant",

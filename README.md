@@ -6,7 +6,7 @@
 ```sh
 packer build template.json
 vagrant box remove arch64 # for update
-vagrant box add arch64 packer_virtualbox_virtualbox.box
+vagrant box add arch64 packer_virtualbox-iso_virtualbox.box
 cd /path/to/vagrant-vm
 vagrant init arch64
 vagrant up
