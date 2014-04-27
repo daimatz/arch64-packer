@@ -2,7 +2,7 @@
 set -ex
 
 mkdir -p -m700 ~/.ssh
-curl -o ~/.ssh/authorized_keys https://raw.github.com/mitchellh/vagrant/master/keys/vagrant.pub
+curl -o ~/.ssh/authorized_keys https://raw.githubusercontent.com/mitchellh/vagrant/master/keys/vagrant.pub
 chmod 600 ~/.ssh/authorized_keys
 
 sudo pacman --noconfirm -S virtualbox-guest-utils
